@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Africa</title>
+    <link rel="stylesheet" href="/south_africa/css/style.css">
+</head>
+
+<style>
+    body {
+        background-color: green;
+        background-image: linear-gradient(to bottom right, green, yellow);
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: green;
+        text-decoration: none;
+    }
+
+    li {
+        float: left;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: yellow;
+    }
+
+    #joburg {
+        float: right;
+        
+    }
+
+
+    .card {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        border-radius: 25px;
+        /* background-color: black; */
+        transition: 0.5s;
+        display: flex;
+        align-items: center;
+        float: left;
+    }
+
+    .card .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        
+    }
+
+    .card .circle::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: yellow;
+        clip-path: circle(120px at center);
+        transition: 0.5s;
+    }
+
+    .card .circle:hover::before {
+        clip-path: circle(400px at center);
+        background-color: skyblue;
+    }
+
+    .card img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        transition: 0.8s;
+    }
+
+    .card:hover img {
+        top: 70%;
+        height: 400px;
+    }
+
+    .card .content {
+        position: relative;
+        width: 95%;
+        left: 5%;
+        padding: 20px 20px 20px 20px;
+        
+
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/south_africa/html/history.html">History</a></li>
+        <li><a href="/south_africa/html/cultures.html">Cultures</a></li>
+        <li><a href="/south_africa/html/places.html">Places</a></li>
+        <li><a href="/south_africa/html/languages.html">Languages</a></li>
+        <li><a href="/south_africa/html/icons.html">Icons</a></li>
+        <li><a href="/south_africa/html/events.html">Events</a></li>
+        <li style="float: right;"><img src="/south_africa/images/Flag_of_South_Africa.svg.webp" alt="South_African_Flag"
+                height="46px"></li>
+    </ul>
+
+    <h1>South Africa</h1>
+
+
+    <div class="section">
+        <div class="card" style="margin-right: 20px;">
+            <div class="circle">
+                <div class="content">
+                    <p>
+                        Johannesburg, South Africa's biggest city and capital of Gauteng province, began as a
+                        19th-century
+                        gold-mining settlement. Its sprawling Soweto township was once home to Nelson Mandela and
+                        Desmond
+                        Tutu. Other Soweto museums that recount the struggle to end segregation include the somber
+                        Apartheid
+                        Museum and Constitution Hill, a former
+                        prison complex.
+                    </p>
+                </div>
+                <img id="joburg" src="/south_africa/images/johannesburg.png" alt="Johannesburg">
+            </div>
+        </div>
+        
+        <p>
+            South Africa, officially the Republic of South Africa (RSA), is the southernmost country in Africa. It is
+            bounded to the south by 2,798 kilometres (1,739 mi) of coastline that stretch along the South Atlantic and
+            Indian Oceans; to the north by the neighbouring countries of Namibia, Botswana, and Zimbabwe; and to
+            the east and northeast by Mozambique and Eswatini and it surrounds the enclaved country of Lesotho. It is
+            the southernmost country on the mainland of the Old World, and the most populous country located entirely
+            south
+            of the equator.
+            <br><br>
+            South Africa is a biodiversity hotspot, with unique biomes, plant and animal life. With over 60
+            million people, the country is the world's 23rd-most populous nation and covers an area of 1,221,037 square
+            kilometres (471,445
+            square miles).
+            <br><br>
+            South Africa has three capital cities, with the executive, judicial and
+            legislative branches of government based in Pretoria, Bloemfontein, and Cape Town respectively. The largest
+            city
+            is Johannesburg.
+            <br><br>
+            About 80% of the population are Black South Africans. The remaining population consists of Africa's
+            largest communities of European (White South Africans), Asian (Indian South Africans and Chinese South
+            Africans), and multiracial (Coloured South Africans) ancestry. South Africa is a multiethnic society
+            encompassing a wide variety of cultures, languages, and religions. 
+            <br><br>
+            Its pluralistic makeup is reflected in
+            the constitution's recognition of 11 official languages, the fourth-highest number in the world.
+            According to the 2011 census, the two most spoken first languages are Zulu (22.7%) and Xhosa (16.0%). The
+            two next ones are of European origin: Afrikaans (13.5%) developed from Dutch and serves as the first
+            language of most Coloured and White South Africans; English (9.6%) reflects the legacy of British
+            colonialism and is commonly used in public and commercial life.
+        </p>
+
+
+    </div>
+
+</body>
+
+</html>
