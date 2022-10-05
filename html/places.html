@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Africa</title>
+    <link rel="stylesheet" href="/south_africa/css/style.css">
+</head>
+
+<style>
+    body {
+        background-color: green;
+        background-image: linear-gradient(to bottom right, green, yellow);
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: green;
+        text-decoration: none;
+    }
+
+    li {
+        float: left;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: yellow;
+    }
+
+    #joburg {
+        float: right;
+    }
+
+    .card {
+        position: relative;
+        width: 600px;
+        height: 270px;
+        border-radius: 25px;
+        /* background-color: black; */
+        transition: 0.5s;
+        align-items: center;
+        float: right;
+
+    }
+
+    .card .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+    }
+
+    .card .circle::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: black;
+        clip-path: circle(0px at center);
+        /* clip-path: url(#heart); */
+        transition: 0.5s;
+    }
+
+    .card .circle:hover::before {
+        clip-path: circle(400px at center);
+        /* clip-path: url(#heart); */
+        /* background-color: skyblue; */
+        background-image: url(../images/cloudy_skies7.gif);
+        background-size: cover;
+    }
+
+    .card img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        transition: 0.8s;
+    }
+
+    .card:hover img {
+        top: 60%;
+        height: 100%;
+    }
+
+    .card .content {
+        position: relative;
+        width: 95%;
+        left: 5%;
+        padding: 20px 20px 20px 20px;
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a href="/south_africa/index.html">Home</a></li>
+        <li><a href="/south_africa/html/history.html">History</a></li>
+        <li><a href="/south_africa/html/cultures.html">Cultures</a></li>
+        <li><a href="/south_africa/html/places.html">Places</a></li>
+        <li><a href="/south_africa/html/languages.html">Languages</a></li>
+        <li><a href="/south_africa/html/icons.html">Icons</a></li>
+        <li><a href="/south_africa/html/events.html">Events</a></li>
+        <li style="float: right;"><img src="/south_africa/images/Flag_of_South_Africa.svg.webp" alt="South_African_Flag"
+                height="45px"></li>
+    </ul>
+
+    <h1>Places</h1>
+
+    <div class="card" style="margin-right: 20px;">
+        <div class="circle">
+            <div class="content" style="color:yellow;">
+                Durban has the busiest container port in Africa and one of the busiest in the Southern Hemisphere.
+            </div>
+            <img id="joburg" src="/south_africa/images/durban2.png" style="width: 100%; height:auto;" alt="Soweto">
+        </div>
+    </div>
+
+    <p>
+        South Africa is a tourist destination and the industry accounts for a substantial amount of the country's
+        revenue. The official marketing agency for the country South African Tourism is responsible for marketing South
+        Africa to the world. According to the World Travel & Tourism Council, the tourism industry directly contributed
+        ZAR 102 billion to South African GDP in 2012, and supports 10.3% of jobs in the country. The official
+        national marketing agency of the South African government, with the goal of promoting tourism in South Africa
+        both locally and globally is known as South African Tourism.
+        <br><br>
+        South Africa offers both domestic and international tourists a wide variety of options, among others the
+        picturesque natural landscape and game reserves, diverse cultural heritage and highly regarded wines. Some of
+        the most popular destinations include several national parks, such as the expansive Kruger National Park in the
+        north of the country, the coastlines and beaches of the KwaZulu-Natal and Western Cape provinces, and the major
+        cities like Cape Town, Johannesburg and Durban.
+        <br><br>
+        According to Statistics South Africa's latest Tourism and Migration Survey, almost 3,5 million travellers passed
+        through the country's ports of entry in August 2017. The top five overseas countries with the largest number
+        of tourists visiting South Africa were the USA, UK, Germany, the Netherlands and France. Most of the tourists
+        arriving in South Africa from elsewhere in Africa came from SADC countries. Zimbabwe tops the list at 31%,
+        followed by Lesotho, Mozambique, Eswatini and Botswana. In addition, Nigeria was the country of origin for
+        nearly 30% of tourists arriving in South Africa. South Africa, officially the Republic of South Africa (RSA), is
+        the southernmost country in Africa.
+        <br><br>
+        South Africa is a biodiversity hotspot, with unique biomes, plant and animal life. With over 60
+        million people, the country is the world's 23rd-most populous nation and covers an area of 1,221,037 square
+        kilometres (471,445 square miles). South Africa has three capital cities, with the executive, judicial and
+        legislative branches of government based in Pretoria, Bloemfontein, and Cape Town respectively. The largest city
+        is Johannesburg.
+    </p>
+
+
+
+</body>
+
+</html>

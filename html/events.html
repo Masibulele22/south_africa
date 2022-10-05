@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Africa</title>
+    <link rel="stylesheet" href="/south_africa/css/style.css">
+</head>
+
+<style>
+    body {
+        background-color: green;
+        background-image: linear-gradient(to bottom right, green, yellow);
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: green;
+        text-decoration: none;
+    }
+
+    li {
+        float: left;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: yellow;
+    }
+
+    #joburg {
+        float: right;
+    }
+
+    .card {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        border-radius: 25px;
+        /* background-color: black; */
+        transition: 0.5s;
+        align-items: center;
+        float: right;
+
+    }
+
+    .card .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+    }
+
+    .card .circle::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: yellow;
+        clip-path: circle(0px at center);
+        /* clip-path: url(#heart); */
+        transition: 0.5s;
+    }
+
+    .card .circle:hover::before {
+        clip-path: circle(400px at center);
+        /* clip-path: url(#heart); */
+        /* background-color: skyblue; */
+        background-image: url(../images/2010fans.gif);
+        background-size: cover;
+    }
+
+    .card img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        transition: 0.8s;
+    }
+
+    .card:hover img {
+        left: 170%;
+        height: 400px;
+    }
+
+    .card .content {
+        position: relative;
+        width: 95%;
+        left: 5%;
+        padding: 20px 20px 20px 20px;
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a href="/south_africa/index.html">Home</a></li>
+        <li><a href="/south_africa/html/history.html">History</a></li>
+        <li><a href="/south_africa/html/cultures.html">Cultures</a></li>
+        <li><a href="/south_africa/html/places.html">Places</a></li>
+        <li><a href="/south_africa/html/languages.html">Languages</a></li>
+        <li><a href="/south_africa/html/icons.html">Icons</a></li>
+        <li><a href="/south_africa/html/events.html">Events</a></li>
+        <li style="float: right;"><img src="/south_africa/images/Flag_of_South_Africa.svg.webp" alt="South_African_Flag"
+                height="45px"></li>
+    </ul>
+
+    <h1>Events</h1>
+
+    <div class="card" style="margin-left: 20px;">
+        <div class="circle">
+            <div class="content" style="color: yellow;">
+                The 2010 FIFA World Cup will is one of the most memorable tournaments in history. Siphiwe Tshabalala
+                (South Africa) was the first player to score a goal in the competition in Bafana Bafana’s opening match
+                against Mexico at Soccer City.
+            </div>
+            <img id="joburg" src="/south_africa/images/Siphiwe_Tshabalala.png" alt="Johannesburg">
+        </div>
+    </div>
+
+    <p>
+        <!-- 
+        South Africa's most popular sports are association football, rugby union and cricket. Other sports with
+        significant support are swimming, athletics, golf, boxing, tennis, ringball, field hockey and netball. Although
+        football (soccer) commands the greatest following among the youth, other sports like basketball, judo, surfing
+        and skateboarding are becoming increasingly popular amongst the populace.
+        <br><br>
+        Association football is the most popular sport in South Africa. South Africa hosted the 2010 FIFA World Cup, and
+        FIFA president Sepp Blatter awarded South Africa a grade 9 out
+        of 10 for successfully hosting the event.
+        <br><br>
+        South Africa has won the Rugby World Cup three times, tying New Zealand for the most Rugby World Cup wins. South
+        Africa first won the 1995 Rugby World Cup, which it hosted. They went on to win the tournament again in 2007 and
+        in 2019. It followed the 1995 Rugby World Cup by hosting the 1996 African Cup of Nations, with the national team
+        Bafana Bafana going on to win the tournament.
+        <br><br>
+        In 2022, the women's team also won the Women's Africa Cup of
+        Nations, beating Morocco 2–1 in the final. It also hosted the 2003 Cricket World Cup, the 2007 World Twenty20
+        Championship. South Africa's national cricket team, the Proteas, have also won the inaugural edition of the 1998
+        ICC KnockOut Trophy by defeating West Indies in the final. South Africa's national blind cricket team also went
+        on to win the inaugural edition of the Blind Cricket World Cup in 1998.
+        <br><br>
+        In 2004, the swimming team of Roland Schoeman, Lyndon Ferns, Darian Townsend and Ryk Neethling won the gold
+        medal at the Olympic Games in Athens, simultaneously breaking the world record in the 4×100 Freestyle Relay.
+        Penny Heyns won Olympic Gold in the 1996 Atlanta Olympic Games, and more recently, swimmers Tatjana Schoenmaker
+        and Lara van Niekerk have both broken world records and won gold medals at the Olympic and Commonwealth Games.
+        In 2012, Oscar Pistorius became the first double amputee sprinter to compete at the Olympic Games in London. In
+        golf, Gary Player is generally regarded as one of the greatest golfers of all time, having won the Career Grand
+        Slam. -->
+
+        
+    </p>
+
+
+
+</body>
+
+</html>

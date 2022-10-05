@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Africa</title>
+    <link rel="stylesheet" href="/south_africa/css/style.css">
+</head>
+
+<style>
+    body {
+        background-color: green;
+        background-image: linear-gradient(to bottom right, green, yellow);
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: green;
+        text-decoration: none;
+    }
+
+    li {
+        float: left;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: yellow;
+    }
+
+    #joburg {
+        float: right;
+    }
+
+
+    .card {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        border-radius: 25px;
+        /* background-color: black; */
+        transition: 0.5s;
+        align-items: center;
+        float: right;
+
+    }
+
+    .card .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+    }
+
+    .card .circle::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: yellow;
+        clip-path: circle(20px at top right);
+        /* clip-path: url(#heart); */
+        transition: 0.5s;
+    }
+
+    .card .circle:hover::before {
+        clip-path: circle(700px at top right);
+        /* clip-path: url(#heart); */
+        background-color: skyblue;
+        background-image: url(../images/cloudy_skies8.gif);
+        background-size: cover;
+    }
+
+    .card img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        transition: 0.8s;
+    }
+
+    .card:hover img {
+        top: 84%;
+        height: 400px;
+    }
+
+    .card .content {
+        position: relative;
+        width: 95%;
+        left: 5%;
+        padding: 20px 20px 20px 20px;
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a href="/south_africa/index.html">Home</a></li>
+        <li><a href="/south_africa/html/history.html">History</a></li>
+        <li><a href="/south_africa/html/cultures.html">Cultures</a></li>
+        <li><a href="/south_africa/html/places.html">Places</a></li>
+        <li><a href="/south_africa/html/languages.html">Languages</a></li>
+        <li><a href="/south_africa/html/icons.html">Icons</a></li>
+        <li><a href="/south_africa/html/events.html">Events</a></li>
+        <li style="float: right;"><img src="/south_africa/images/Flag_of_South_Africa.svg.webp" alt="South_African_Flag"
+                height="45px"></li>
+    </ul>
+
+    <h1>Languages</h1>
+
+    <div class="card" style="margin-right: 20px;">
+        <div class="circle">
+            <div class="content" style="color: yellow;">
+                Origins of the Cape Malay people in Bo-Kaap range from East Africa to Malaysia, Madagascar,
+                Indonesia, India, Sri
+                Lanka and The Philippines. This historic and small residential area of Cape Town built mostly
+                between 1760 and 1840 that became home to many Muslims and freed slaves. 56% of residents identify as Muslim.
+            </div>
+            <img id="joburg" src="/south_africa/images/Bo-Kaap.png" alt="Johannesburg">
+        </div>
+    </div>
+
+    <p>
+        South Africa has 11 official languages: Zulu, Xhosa, Afrikaans, English, Pedi, Tswana, Southern Sotho,
+        Tsonga, Swazi, Venda, and Southern Ndebele (in order of first language speakers). In this regard it is fourth
+        only to Bolivia, India, and Zimbabwe in number. While all the languages are formally equal, some languages are
+        spoken more than others. According to the 2011 census, the three most spoken first languages are Zulu (22.7%),
+        Xhosa (16.0%), and Afrikaans (13.5%).
+        <br><br>
+        Although English is recognised as the language of commerce and science,
+        it is only the fourth most common home language, that of only 9.6% of South Africans in 2011; nevertheless, it
+        has become the de facto lingua franca of the nation. Estimates based on the 1991 census suggest just under
+        half of South Africans can speak English. It is the second most commonly spoken language outside of the
+        household, after Zulu.
+        <br><br>
+        The country also recognises several unofficial languages, including Fanagalo, Khoe, Lobedu, Nama, Northern
+        Ndebele, Phuthi, and South African Sign Language. These unofficial languages may be used in certain
+        official uses in limited areas where it has been determined that these languages are prevalent. Many of the
+        unofficial languages of the San and Khoekhoe peoples contain regional dialects stretching northwards into
+        Namibia and Botswana, and elsewhere.
+        <br><br>
+        These people, who are a physically distinct population from the Bantu
+        people who make up most of the Black Africans in South Africa, have their own cultural identity based on their
+        hunter-gatherer societies. They have been marginalised to a great extent, and the remainder of their languages
+        are in danger of becoming extinct.
+        <br><br>
+        White South Africans may also speak European languages, including Italian, Portuguese (also spoken by black
+        Angolans and Mozambicans), Dutch, German, and Greek, while some Indian South Africans speak Indian languages,
+        such as Gujarati, Hindi, Tamil, Telugu, and Urdu. French is spoken by migrants from Francophone Africa.
+    </p>
+
+
+
+</body>
+
+</html>

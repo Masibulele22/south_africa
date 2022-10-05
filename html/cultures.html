@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Africa</title>
+    <link rel="stylesheet" href="/south_africa/css/style.css">
+</head>
+
+<style>
+    body {
+        background-color: green;
+        background-image: linear-gradient(to bottom right, green, yellow);
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: green;
+        text-decoration: none;
+    }
+
+    li {
+        float: left;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: yellow;
+    }
+
+    #joburg {
+        float: right;
+    }
+
+    .card {
+        position: relative;
+        width: 350px;
+        height: 490px;
+        border-radius: 25px;
+        /* background-color: black; */
+        transition: 0.5s;
+        align-items: center;
+        float: right;
+
+    }
+
+    .card .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+    }
+
+    .card .circle::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: yellow;
+        clip-path: circle(20px at center);
+        /* clip-path: url(#heart); */
+        transition: 0.5s;
+    }
+
+    .card .circle:hover::before {
+        clip-path: circle(400px at center);
+        /* clip-path: url(#heart); */
+        /* background-color: skyblue; */
+        background-image: url(../images/african_print_1.gif);
+        background-size: cover;
+    }
+
+    .card img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        transition: 0.8s;
+    }
+
+    .card:hover img {
+        top: 70%;
+        height: 400px;
+    }
+
+    .card .content {
+        position: relative;
+        width: 95%;
+        left: 5%;
+        padding: 20px 20px 20px 20px;
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a href="/south_africa/index.html">Home</a></li>
+        <li><a href="/south_africa/html/history.html">History</a></li>
+        <li><a href="/south_africa/html/cultures.html">Cultures</a></li>
+        <li><a href="/south_africa/html/places.html">Places</a></li>
+        <li><a href="/south_africa/html/languages.html">Languages</a></li>
+        <li><a href="/south_africa/html/icons.html">Icons</a></li>
+        <li><a href="/south_africa/html/events.html">Events</a></li>
+        <li style="float: right;"><img src="/south_africa/images/Flag_of_South_Africa.svg.webp" alt="South_African_Flag"
+                height="45px"></li>
+    </ul>
+
+    <h1>Cultures</h1>
+    <div class="card" style="margin-right: 20px;">
+        <div class="circle">
+            <div class="content" style="color: white;">
+                Genetic research reveals Khoisan were once the largest group of humans 22 000 years ago.
+            </div>
+            <img id="joburg" style="width: 350px; height:auto" src="/south_africa/images/san.png" alt="Johannesburg">
+        </div>
+    </div>
+    <p>
+        South Africa contains some of the oldest archaeological and human-fossil sites in the world.
+        Archaeologists have recovered extensive fossil remains from a series of caves in Gauteng Province. The area, a
+        UNESCO World Heritage Site, has been branded "the Cradle of Humankind". The sites include Sterkfontein, one of
+        the richest sites for hominin fossils in the world, as well as Swartkrans, Gondolin Cave, Kromdraai, Cooper's
+        Cave and Malapa.
+        <br><br>
+        Settlements of Bantu-speaking peoples, who were iron-using agriculturists and herdsmen, were present south of
+        the Limpopo River (now the northern border with Botswana and Zimbabwe) by the 4th or 5th century CE. They
+        displaced, conquered, and absorbed the original Khoisan, Khoikhoi and San peoples. The Bantu slowly moved south.
+        The earliest ironworks in modern-day KwaZulu-Natal Province are believed to date from around 1050. The
+        southernmost group was the Xhosa people, whose language incorporates certain linguistic traits from the earlier
+        Khoisan people.
+        <br><br>
+        The Xhosa reached the Great Fish River, in today's Eastern Cape Province. As they migrated,
+        these larger Iron Age populations displaced or assimilated earlier peoples. In Mpumalanga Province, several
+        stone circles have been found along with a stone arrangement that has been named Adam's Calendar, and the ruins
+        are thought to be created by the Bakone, a Northern Sotho people.
+        <br><br>
+        The South African black majority still has a substantial number of rural inhabitants who lead largely
+        impoverished lives. It is among these people that cultural traditions survive most strongly; as blacks have
+        become increasingly urbanised and Westernised, aspects of traditional culture have declined.
+        <br><br>
+        Members of the
+        middle class, who are predominantly white but whose ranks include growing numbers of Black, Coloured and Indian
+        people, have lifestyles similar in many respects to that of people found in Western Europe, North America and
+        Australasia.
+    </p>
+
+
+
+</body>
+
+</html>

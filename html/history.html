@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>South Africa</title>
+    <link rel="stylesheet" href="/south_africa/css/style.css">
+</head>
+
+<style>
+    body {
+        background-color: green;
+        background-image: linear-gradient(to bottom right, green, yellow);
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: green;
+        text-decoration: none;
+    }
+
+    li {
+        float: left;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    li a {
+        display: block;
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: yellow;
+    }
+
+    #joburg {
+        float: right;
+    }
+
+    .card {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        border-radius: 25px;
+        /* background-color: black; */
+        transition: 0.5s;
+        align-items: center;
+        float: right;
+
+    }
+
+    .card .circle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+    }
+
+    .card .circle::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: yellow;
+        clip-path: circle(0px at center);
+        /* clip-path: url(#heart); */
+        transition: 0.5s;
+    }
+
+    .card .circle:hover::before {
+        clip-path: circle(400px at center);
+        /* clip-path: url(#heart); */
+        /* background-color: skyblue; */
+        background-image: url(../images/fireworks1.gif);
+        background-size: cover;
+    }
+
+    .card img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        transition: 0.8s;
+    }
+
+    .card:hover img {
+        top: 60%;
+        height: 400px;
+    }
+
+    .card .content {
+        position: relative;
+        width: 95%;
+        left: 5%;
+        padding: 20px 20px 20px 20px;
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a href="/south_africa/index.html">Home</a></li>
+        <li><a href="/south_africa/html/history.html">History</a></li>
+        <li><a href="/south_africa/html/cultures.html">Cultures</a></li>
+        <li><a href="/south_africa/html/places.html">Places</a></li>
+        <li><a href="/south_africa/html/languages.html">Languages</a></li>
+        <li><a href="/south_africa/html/icons.html">Icons</a></li>
+        <li><a href="/south_africa/html/events.html">Events</a></li>
+        <li style="float: right;"><img src="/south_africa/images/Flag_of_South_Africa.svg.webp" alt="South_African_Flag"
+                height="45px"></li>
+    </ul>
+
+    <h1>History</h1>
+
+    <div class="card" style="margin-left: 20px;">
+        <div class="circle">
+            <div class="content" style="color: yellow;">
+                An iconic figure of anti-racism, Nelson Mandela (with Winnie Madikizela-Mandela), the leader of a
+                movement to end South African
+                apartheid, was released from prison on 11 February, 1990
+            </div>
+            <img id="joburg" src="/south_africa/images/mandelas.png" alt="Johannesburg">
+        </div>
+    </div>
+
+    <p>
+        In northern South Africa near Johannesburg, there is a cave formation called the Sterkfontein. Within these
+        caves, archaeologists have uncovered some of the earliest human fossils ever found. Some are more than two
+        million years old. The find earned the region the nickname "Cradle of Humankind."
+        <br><br>
+        About 24,000 years ago, tribes of hunter-gatherers known as the San, or Bushmen, began moving into South Africa.
+        Many San still live, much as their ancestors did, around the Kalahari Desert in the northwest.
+        <br><br>
+        In the 1400s, European ships heading to the Far East began stopping on the South African coast for supplies. In
+        1652, the Netherlands established the southern city of Cape Town, and Dutch farmers, called Boers, began
+        settling in the areas around the city.
+        <br><br>
+        In 1806, wars in Europe left the British in control of the Cape Town colony. In 1910, the British united four
+        colonies in the region and created South Africa. They established laws that separated whites from black South
+        Africans, a practice of segregation called apartheid, which led to decades of conflict.
+        <br><br>
+        The National Party imposed apartheid in 1948,
+        institutionalising previous racial segregation. After a long and sometimes violent struggle by the African
+        National Congress and other anti-apartheid activists both inside and outside the country, the repeal of
+        discriminatory laws began in the mid-1980s. 
+        <br><br>
+        In 1963, Nelson Mandela, head of the anti-apartheid African National Congress, was given a life sentence in jail
+        for "terrorist" activities. In 1990, after 27 years behind bars, he was freed by President F.W. de Klerk. In
+        1994, Mandela was elected president of South Africa and served until 1999.
+        <br><br>
+        
+    </p>
+
+
+
+</body>
+
+</html>
