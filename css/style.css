@@ -1,9 +1,18 @@
 * {
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* padding: 0;
+    border: 0;
+    margin: 0; */
+    scroll-behavior: smooth;
 }
 
 p {
     font-size: large;
     overflow: visible;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
